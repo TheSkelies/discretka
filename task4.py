@@ -15,16 +15,15 @@ def nok(a, b): # 3
 
 # функция из 3 задания
 
-def nod_of_list(nums): # 2
-
+def nok_of_list(nums): # 4
     if len(nums) == 2:
-        return nod(nums[0], nums[1])
+        return nok(nums[0], nums[1])
 
     a = nums.pop()
     b = nums.pop()
 
-    nums.append(nod(a, b))
+    nums.append(nok(a, b))
 
-    return nod_of_list(nums)
+    return nok_of_list(nums)
 
-print(nod_of_list([120, 72, 48]))
+print(nok_of_list([12, 32, 36]))
